@@ -49,7 +49,14 @@ dependencies {
     //RETROFIT
     implementation(libs.retrofit)
     implementation (libs.converter.gson)
-    implementation (libs.glide.v490)
+    //implementation (libs.glide)
     implementation (libs.circleimageview)
+
+    //ESTA FRAGMENTO CORRIGE EL ERROR DE DEPENDENCIA DUPLICADA
+
+    implementation("com.github.bumptech.glide:glide:4.15.1") {
+        exclude(group = "com.android.support", module = "support-v4")
+        exclude(group = "com.google.code.gson", module = "gson")
+    }
 
 }

@@ -1,6 +1,6 @@
 package com.miguelvise.myappretrofit
 
-data class UserItem(
+data class UsersItem(
     val avatar_url: String,
-    val login: String,
+    val login: String
 )

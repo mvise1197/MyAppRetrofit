@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 
 // Es el responsable de enlazar los datos con la lista que se muestra en el RecyclerView
 
-class MyAdapter(var con : Context, var list: List<UserItem>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(var con : Context, var list: List<UsersItem>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     inner class MyViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView) {
         var tvName: TextView = itemView.findViewById(R.id.RV_tv)
         var tvAvatar: ImageView = itemView.findViewById(R.id.RV_Image)
